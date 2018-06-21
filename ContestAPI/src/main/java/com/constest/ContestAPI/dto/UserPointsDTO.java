@@ -13,7 +13,7 @@ public class UserPointsDTO {
     private String userName;
     private String emailId;
 
-    private
+    
 
 
 }
