@@ -1,4 +1,4 @@
-package com.constest.ContestAPI.Entity;
+package com.constest.ContestAPI.entity;
 
 
 import org.hibernate.annotations.GenericGenerator;
@@ -13,31 +13,34 @@ public class ContestUserEntity {
 
     private static final String ID_COLUMN = "UserContestId";
 
+
+
     @Id
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     @Column(name = ContestUserEntity.ID_COLUMN)
-    private String UserContestId;
+    private String userContestId;
     private String userId;
 
     @OneToOne
+    @JoinColumn(name = "contest_id",nullable = false)
     private ContestEntity contestEntity;
 
     @Override
     public String toString() {
         return "ContestUserEntity{" +
-                "UserContestId='" + UserContestId + '\'' +
+                "UserContestId='" + userContestId + '\'' +
                 ", userId='" + userId + '\'' +
                 ", contestEntity=" + contestEntity +
                 '}';
     }
 
     public String getUserContestId() {
-        return UserContestId;
+        return userContestId;
     }
 
     public void setUserContestId(String userContestId) {
-        UserContestId = userContestId;
+        userContestId = userContestId;
     }
 
     public String getUserId() {

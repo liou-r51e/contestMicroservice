@@ -1,9 +1,8 @@
-package com.constest.ContestAPI.Service;
+package com.constest.ContestAPI.service;
 
 
-import com.constest.ContestAPI.Entity.ContestUserEntity;
-import com.constest.ContestAPI.Repository.ContestRepositoryInterface;
-import com.constest.ContestAPI.dto.ContestDTO;
+import com.constest.ContestAPI.entity.ContestUserEntity;
+import com.constest.ContestAPI.repository.ContestRepositoryInterface;
 import com.constest.ContestAPI.dto.ContestUserDTO;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
-package com.constest.ContestAPI.Controller;
+package com.constest.ContestAPI.controller;
 
 
-import com.constest.ContestAPI.Service.ContestServiceInterface;
+import com.constest.ContestAPI.service.ContestServiceInterface;
 import com.constest.ContestAPI.dto.ContestUserDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;

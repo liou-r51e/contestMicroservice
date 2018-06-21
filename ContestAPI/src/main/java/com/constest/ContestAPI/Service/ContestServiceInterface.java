@@ -1,6 +1,5 @@
-package com.constest.ContestAPI.Service;
+package com.constest.ContestAPI.service;
 
-import com.constest.ContestAPI.dto.ContestDTO;
 import com.constest.ContestAPI.dto.ContestUserDTO;
 
 public interface ContestServiceInterface {
