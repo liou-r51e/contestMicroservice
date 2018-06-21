@@ -1,4 +1,4 @@
 package com.constest.ContestAPI.service;
 
-public interface UserPointsServices {
+public interface UserPointsService {
 }
